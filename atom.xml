@@ -5,9 +5,9 @@
   <subtitle>Welcome to my blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yucongding.com/"/>
+  <link href="http://blog.yucongding.com/"/>
   <updated>2020-03-17T03:46:22.469Z</updated>
-  <id>http://yucongding.com/</id>
+  <id>http://blog.yucongding.com/</id>
   
   <author>
     <name>Yucong Ding</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yucongding.com/2020/03/17/hello-world/"/>
-    <id>http://yucongding.com/2020/03/17/hello-world/</id>
+    <link href="http://blog.yucongding.com/2020/03/17/hello-world/"/>
+    <id>http://blog.yucongding.com/2020/03/17/hello-world/</id>
     <published>2020-03-17T03:46:22.469Z</published>
     <updated>2020-03-17T03:46:22.469Z</updated>
     
