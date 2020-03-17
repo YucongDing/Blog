@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.yucongding.com/"/>
-  <updated>2020-03-17T03:46:22.469Z</updated>
+  <updated>2020-03-17T13:44:19.474Z</updated>
   <id>http://blog.yucongding.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Course Overview &amp; Shell</title>
+    <link href="http://blog.yucongding.com/2020/03/17/missing_one/"/>
+    <id>http://blog.yucongding.com/2020/03/17/missing_one/</id>
+    <published>2020-03-17T13:23:00.000Z</published>
+    <updated>2020-03-17T13:44:19.474Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Course-overview-amp-the-Shell&quot;&gt;&lt;a href=&quot;#Course-overview-amp-the-Shell&quot; class=&quot;headerlink&quot; title=&quot;Course overview &amp;amp; the
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Course" scheme="http://blog.yucongding.com/categories/Course/"/>
+    
+    
+      <category term="shell" scheme="http://blog.yucongding.com/tags/shell/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

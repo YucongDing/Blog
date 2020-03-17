@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Yucong&#39;s Blog">
+    <meta name="keywords" content="Course Overview &amp; Shell, Yucong&#39;s Blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>Hello World | Yucong&#39;s Blog</title>
+    <title>Course Overview &amp; Shell | Yucong&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -331,12 +331,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('_image/missing/banner.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Course Overview &amp; Shell</h1>
                 </div>
             </div>
         </div>
@@ -451,12 +451,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/shell/">
+                                <span class="chip bg-color">shell</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Course/" class="post-category">
+                                Course
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -479,14 +492,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    125
+                    454
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    2 Min
                 </div>
                 
 
@@ -502,15 +515,53 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h1 id="Course-overview-amp-the-Shell"><a href="#Course-overview-amp-the-Shell" class="headerlink" title="Course overview &amp; the Shell"></a>Course overview &amp; the Shell</h1><h2 id="Exercise"><a href="#Exercise" class="headerlink" title="Exercise"></a>Exercise</h2><ol>
+<li><p>Create a new directory called <code>missing</code> under <code>/tmp</code>.</p>
+<pre class=" language-sh"><code class="language-sh"> mkdir /tmp/missing</code></pre>
+</li>
+<li><p>Look up the <code>touch</code> program. The <code>man</code> program is your friend.</p>
+<pre class=" language-sh"><code class="language-sh"> man touch</code></pre>
+</li>
+<li><p>Use <code>touch</code> to create a new file called <code>semester</code> in <code>missing</code>.</p>
+<pre class=" language-sh"><code class="language-sh"> # cd /tmp/missing/ && touch semester
+ touch /tmp/missing/semester</code></pre>
+</li>
+<li><p>Write the following into that file, one line at a time.</p>
+<pre class=" language-sh"><code class="language-sh"> # Use the > redirection symbol and >> to append the second line
+ echo '#!/bin/sh' > semester
+ echo 'curl --head --silent https://missing.csail.mit.edu' >> semester</code></pre>
+<blockquote>
+<p>The <em>history expansion</em> character, usually <code>i</code>, must be quoted to prevent history expansion. <code>''</code> treats the contents inside as literal value, it won’t change anything. <code>""</code> preserves the literal value of all characters within the quotes, with the exception of <code>$</code>,<code>\</code>,<code>"</code>,or newline.<a href="https://stackoverflow.com/questions/6697753/difference-between-single-and-double-quotes-in-bash" target="_blank" rel="noopener">See here</a></p>
+</blockquote>
+</li>
+<li><p>Try to execute the file, i.e. type the path to the script (<code>./semester</code>) into your shell and press enter.</p>
+<pre class=" language-sh"><code class="language-sh"> # Shell Prompt:
+ # zsh: permission denied: ./semester
+ ls -l
+ # We can see semester has no excucute permission</code></pre>
+</li>
+<li><p>Run the command by explicitly starting the <code>sh</code> interpreter, and giving it the file <code>semester</code> as the first argument, i.e. <code>sh semester</code>. Why does this work, while <code>./semester</code> didn’t?</p>
+<blockquote>
+<p>When we run sh interpreter and give <code>semester</code> as it’s argument, we actually use the <code>sh</code> program to read the <code>semester</code> file’s content and run the <code>sh</code> program instead of running <code>semester</code> script directly.</p>
+</blockquote>
+</li>
+<li><p>Look up the <code>chmod</code> program (e.g. use <code>man chmod</code>).</p>
+<pre class=" language-sh"><code class="language-sh">man chmod</code></pre>
+</li>
+<li><p>Use <code>chmod</code> to make it possible to run the command <code>./semester</code> rather than having to type <code>sh semester</code>. How does your shell know that the file is supposed to be interpreted using <code>sh</code>?</p>
+<pre class=" language-sh"><code class="language-sh"> chmod +x semester
+ # shebang lines including a path to choose which interpreter to use.</code></pre>
+</li>
+<li><p>Use <code>|</code> and <code>&gt;</code> to write the “last modified” date output by <code>semester</code> into a file called <code>last-modified.txt</code> in your home directory.</p>
+<pre class=" language-sh"><code class="language-sh"> ./semester | grep -i "last-modified" > /home/last-modified.txt</code></pre>
+</li>
+<li><p>Write a command that reads out your laptop battery’s power level or your desktop machine’s CPU temperature from <code>/sys</code>. Note: if you’re a macOS user, your OS doesn’t have sysfs, so you can skip this exercise.</p>
+<pre class=" language-sh"><code class="language-sh"># Actually I am using macOS, and I run the command in WSL for Win10 on my Desktop.
+# It works fine.
+cat /sys/class/power_supply/battery/capacity
+# And the WSL can't fetch temperature, you can see it in /sys/class/thermal</code></pre>
+</li>
+</ol>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -556,7 +607,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/shell/">
+                                    <span class="chip bg-color">shell</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -725,7 +780,7 @@
         repo: 'https://github.com/YucongDing/Blog.git',
         owner: 'YucongDing',
         admin: "YucongDing",
-        id: '2020-03-17T11-46-22',
+        id: '2020-03-17T21-23-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -746,9 +801,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2020/03/17/missing_one/">
                     <div class="card-image">
@@ -765,9 +821,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -780,6 +836,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -795,7 +852,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2020/03/17/hello-world/">
@@ -825,7 +882,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
