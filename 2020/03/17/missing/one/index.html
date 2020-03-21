@@ -485,7 +485,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-03-17
+                    2020-03-18
                 </div>
                 
 
@@ -517,17 +517,17 @@
             <div id="articleContent">
                 <h1 id="Course-overview-amp-the-Shell"><a href="#Course-overview-amp-the-Shell" class="headerlink" title="Course overview &amp; the Shell"></a>Course overview &amp; the Shell</h1><h2 id="Exercise"><a href="#Exercise" class="headerlink" title="Exercise"></a>Exercise</h2><ol>
 <li><p>Create a new directory called <code>missing</code> under <code>/tmp</code>.</p>
-<pre class=" language-sh"><code class="language-sh"> mkdir /tmp/missing</code></pre>
+<pre class=" language-shell"><code class="language-shell"> mkdir /tmp/missing</code></pre>
 </li>
 <li><p>Look up the <code>touch</code> program. The <code>man</code> program is your friend.</p>
-<pre class=" language-sh"><code class="language-sh"> man touch</code></pre>
+<pre class=" language-shell"><code class="language-shell"> man touch</code></pre>
 </li>
 <li><p>Use <code>touch</code> to create a new file called <code>semester</code> in <code>missing</code>.</p>
-<pre class=" language-sh"><code class="language-sh"> # cd /tmp/missing/ && touch semester
+<pre class=" language-shell"><code class="language-shell"> # cd /tmp/missing/ && touch semester
  touch /tmp/missing/semester</code></pre>
 </li>
 <li><p>Write the following into that file, one line at a time.</p>
-<pre class=" language-sh"><code class="language-sh"> # Use the > redirection symbol and >> to append the second line
+<pre class=" language-shell"><code class="language-shell"> # Use the > redirection symbol and >> to append the second line
  echo '#!/bin/sh' > semester
  echo 'curl --head --silent https://missing.csail.mit.edu' >> semester</code></pre>
 <blockquote>
@@ -535,7 +535,7 @@
 </blockquote>
 </li>
 <li><p>Try to execute the file, i.e. type the path to the script (<code>./semester</code>) into your shell and press enter.</p>
-<pre class=" language-sh"><code class="language-sh"> # Shell Prompt:
+<pre class=" language-shell"><code class="language-shell"> # Shell Prompt:
  # zsh: permission denied: ./semester
  ls -l
  # We can see semester has no excucute permission</code></pre>
@@ -546,17 +546,17 @@
 </blockquote>
 </li>
 <li><p>Look up the <code>chmod</code> program (e.g. use <code>man chmod</code>).</p>
-<pre class=" language-sh"><code class="language-sh">man chmod</code></pre>
+<pre class=" language-shell"><code class="language-shell">man chmod</code></pre>
 </li>
 <li><p>Use <code>chmod</code> to make it possible to run the command <code>./semester</code> rather than having to type <code>sh semester</code>. How does your shell know that the file is supposed to be interpreted using <code>sh</code>?</p>
-<pre class=" language-sh"><code class="language-sh"> chmod +x semester
+<pre class=" language-shell"><code class="language-shell"> chmod +x semester
  # shebang lines including a path to choose which interpreter to use.</code></pre>
 </li>
 <li><p>Use <code>|</code> and <code>&gt;</code> to write the “last modified” date output by <code>semester</code> into a file called <code>last-modified.txt</code> in your home directory.</p>
-<pre class=" language-sh"><code class="language-sh"> ./semester | grep -i "last-modified" > /home/last-modified.txt</code></pre>
+<pre class=" language-shell"><code class="language-shell">./semester | grep -i "last-modified" > /home/last-modified.txt</code></pre>
 </li>
 <li><p>Write a command that reads out your laptop battery’s power level or your desktop machine’s CPU temperature from <code>/sys</code>. Note: if you’re a macOS user, your OS doesn’t have sysfs, so you can skip this exercise.</p>
-<pre class=" language-sh"><code class="language-sh"># Actually I am using macOS, and I run the command in WSL for Win10 on my Desktop.
+<pre class=" language-shell"><code class="language-shell"># Actually I am using macOS, and I run the command in WSL for Win10 on my Desktop.
 # It works fine.
 cat /sys/class/power_supply/battery/capacity
 # And the WSL can't fetch temperature, you can see it in /sys/class/thermal</code></pre>
